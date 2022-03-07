@@ -4,13 +4,7 @@ Code to replicate experiments conducted for predicting CMA-ES operators in the s
 
 ## Introduction
 
-The code we provide with our repository is based upon our paper [Predicting CMA-ES Operators as Inductive Biases for Shape Optimization Problems](https://ieeexplore.ieee.org/document/9660001/) (Friess, Tiňo, Menzel, Sendhoff & Yao, 2022) and can be used to replicate the experiments for predicting CMA-ES in the scenario of simple shape optimization with mesh data. 
-
-We provide experimental data from in the intermediate steps within our paper in the folders  `model_data`,  `ea_data` and `histogram_data` respectively. The folder `gcn` contains the necessary custom operations for graph convolution and pooling. Where the former is our own custom Keras implementation and the latter is based upon code accompanying the original paper from Defferrard et al. (2016). Different implementations of evolutionary algorithms from the DEAP library can be used for experimentation are provided in `ea_generate` folder.  The scripts `training_\*.py` can be used to generate partition models, `histogram_calculation_\*.py` to obtain structured data formats and `Notebook-\*nb` to experiment with network architectures and analyze their feature extraction capabilities. All them are contained within the main folder.
-
-In the following, we will give a more in-depth description on the technical requirements and how to use our scripts according to the given step-by-step experiments within our paper.
- `run.py` 
-
+The code we provide within our repository is based upon our paper [Predicting CMA-ES Operators as Inductive Biases for Shape Optimization Problems](https://ieeexplore.ieee.org/document/9660001/) (Friess, Tiňo, Menzel, Sendhoff & Yao, 2022) and can be used to replicate the experiments for predicting CMA-ES in the scenario of simple shape optimization with mesh data. 
 
 ## Technical Requirements
 
@@ -30,7 +24,12 @@ All required libraries can be installed by executing `pip install -r requirement
 
 The following sections elaborate on how to replicate the steps and experiments presented within our paper. 
 
-## 1. Setting up a Search Space Partition Method
+## Instructions
+
+We provide experimental data from in the intermediate steps within our paper in the folders  `model_data`,  `ea_data` and `histogram_data` respectively. The folder `gcn` contains the necessary custom operations for graph convolution and pooling. Where the former is our own custom Keras implementation and the latter is based upon code accompanying the original paper from Defferrard et al. (2016). Different implementations of evolutionary algorithms from the DEAP library can be used for experimentation are provided in `ea_generate` folder.  The scripts `training_\*.py` can be used to generate partition models, `histogram_calculation_\*.py` to obtain structured data formats and `Notebook-\*nb` to experiment with network architectures and analyze their feature extraction capabilities. All them are contained within the main folder.
+
+In the following, we will give a more in-depth description on the technical requirements and how to use our scripts according to the given step-by-step experiments within our paper.
+ `run.py` 
 
 
 ## How to Cite
